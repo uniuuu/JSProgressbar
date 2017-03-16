@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<title>Test</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=yes">
+<link rel="stylesheet" href="T_styles.css">
+<!-- <script src="jquery-3.1.1.min.js"></script>  -->
+<script type="text/javascript">
+/*	$(document).ready(function grow() {
+		var elem = document.getElementById("progress");
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 90) {
+				clearInterval(id);
+			} else {
+				width++;
+				elem.style.width = width + '%';
+			}
+		}
+	}); */
+
+	
+	
+/*	function two(){
+		
+		alert("Ready!");
+	}
+	
+	window.onload = two;
+
+	document.addEventListener('DOMContentLoaded', function grow1() {
+		var elem = document.getElementById("progress");
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++;
+				elem.style.width = width + '%';
+			}
+		}
+	}, false); */
+	//domReady(two());
+	function grow(id) {
+		if (id === undefined) {
+		    arg = 90;
+		  } else {
+		var arg = document.getElementById(id).value;
+		arg = arg*6.67
+		  }
+         if (arg > 100) {
+             arg = 100
+         }
+                      
+            
+		alert(arg);
+		alert(id);
+		
+		var elem = document.getElementById("progress");
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= arg) {
+				clearInterval(id);
+			} else {
+				width++;
+				elem.style.width = width + '%';
+			}
+		}
+	}
+
+</script>
+</head>
+<body onload="grow();">
+<!-- <body> -->
+	<div id="container">
+		<div id="header">
+			<h4>Target indicator demo</h4>
+		</div>
+		<div id="content">
+			<div id="wrapped">
+				<div id="element1">
+					<h4>Reached:</h4>
+				</div>
+				<div id="element2">
+					<div id="progress"></div>
+				</div>
+				<div id="element3">
+					<div id="target1">
+						Target
+					</div>
+					<div id="target2">
+						$15
+					</div>
+				</div>
+			</div>
+			<div id=form>
+			<form action="" onsubmit="return false;">
+           <em>Current amount:</em> <input type="text" id="amount" name="value" size="1px">
+           <input type="submit" value="Submit" onclick='grow("amount")'>
+			</div>
+			<div id="element4">
+				<h5>You need more $1 to reach your target</h5>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

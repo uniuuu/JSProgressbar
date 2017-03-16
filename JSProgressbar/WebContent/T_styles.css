@@ -1,0 +1,100 @@
+Body{
+background-color : #fff;
+}
+
+#container{
+border-radius: 5px;
+background-color : #eee;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+height : 190px;
+//clear: both;
+}
+
+#header {
+border-radius: 5px 5px 0px 0px;
+background-color: #2E2E2E;
+//padding : 5px;
+//width: 100px;
+text-align: Left;
+//float: left;
+//border : black 1px;
+color: white;
+}
+
+#content{
+border-radius: 5px;
+background-color: #fff;
+//width: 150px;
+//padding : 10px;
+margin: 10px;
+text-align: center;
+//float: right;
+//clear: both;
+}
+#wrapped {
+
+//margin-left:auto;
+//margin-right: auto;
+
+}
+
+
+#element1 {
+float: left;
+width:80px;
+//clear: both;
+padding : 10px;
+text-align: left;
+}
+
+#element2{
+float: Left;
+Width: 30%;
+Height:10px;
+background-color: gray;
+margin : 40px 0 0 0;
+//text-align: right;
+}
+
+#progress{
+
+Width: 1%;
+height : 8px;
+margin: 1px;
+Background-color: red;
+
+}
+
+#content #element3{
+//padding: 10px;
+width: 50px;
+height : 45px;
+margin-right: 35px;
+margin-top: 20px;
+//Padding-bottom: 50px;
+float: Left;
+//text-align: right;
+background-color : black;
+}
+
+#target1{
+padding-top: 1px;
+color: white;
+
+}
+
+#target2{
+color: white;
+
+}
+
+#element4{
+clear: both;
+}
+
+
+#form{
+clear: both;
+}
